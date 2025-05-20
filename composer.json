@@ -1,0 +1,16 @@
+{
+    "name": "hb/ecommerce_php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Hb\\EcommercePhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "StephaneLay",
+            "email": "stephane.lay@hotmail.fr"
+        }
+    ],
+    "require": {}
+}

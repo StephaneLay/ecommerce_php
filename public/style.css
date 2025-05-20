@@ -18,8 +18,14 @@ header>div{
 
 }
 
+li{
+    list-style: none;
+
+}
+
 header ul{
     display: flex;
+    flex-direction: row;
 }
 
 header a{
@@ -27,7 +33,6 @@ header a{
 }
 
 header li{
-    list-style: none;
     margin-left: 1rem;
     font-size: 1.3em;
 }
@@ -38,12 +43,60 @@ header form{
     align-items: center;
 }
 
+#cartnumber{
+    display: inline;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.productslist{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    padding: 10px;
+    
+}
+
 .product{
     width: 300px;
-    height: 10rem;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(144, 127, 127);
+    
 }
 
 .product img{
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.product-text h3{
+    font-size: 1.5em;
+}
+
+.product-text p{
+    margin-top: 0;
+}
+
+.product-text a{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    text-decoration: none;
+
+}
+
+
+

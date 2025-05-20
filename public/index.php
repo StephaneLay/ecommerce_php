@@ -1,5 +1,6 @@
 <?php
 
+use Hb\EcommercePhp\Basic\Cart;
 use Hb\EcommercePhp\Basic\Navbar;
 use Hb\EcommercePhp\Basic\Product;
 use Hb\EcommercePhp\Basic\ProductList;
@@ -8,10 +9,13 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 session_start();
 
-$header = new Navbar("/", "cart.php");
+$cart = new Cart();
+$header = new Navbar("/", "cart.php",$cart->getProductNumber());
 $productList = new ProductList();
 
-$productList->addProduct("assets/dogo1.jpg", 'dogo1', 'un beau doggo', 17);
-$productList->addProduct("assets/dogo2.jpg", 'dogo2', 'un magnifique doggo', 26);
 
 $productList->render();
+$cart->addProductToCart();
+
+// PROBLEME==== LE COMPTEUR S'INCREMENTE POUR RIEN DES QU'ON CHARGE UNE PAGE !!
+// IL FAUDRAIT PEUT ETRE REPENSER LE SYSTEME POUR CONTENIR LES INFORMATIONS DIFFEREMENT

@@ -5,7 +5,7 @@ namespace Hb\EcommercePhp\Basic;
 class Navbar
 {
 
-    public function __construct($productlink, $cartlink)
+    public function __construct($productlink, $cartlink,$number)
     {
         echo '<!DOCTYPE html>
 <html lang="en">
@@ -23,7 +23,9 @@ class Navbar
         <h1>E-Shop</h1>
         <ul>
             <li><a href="' . $productlink . '">Products</a></li>
-            <li><a href="' . $cartlink . '">Cart</a></li>
+            <li><a href="' . $cartlink . '">Cart</a>
+            <p id="cartnumber">'.$number.'</p>
+            </li>
                     </ul>
     </div>
     <form action="post">
@@ -31,8 +33,7 @@ class Navbar
         <button>Search</button>
     </form>
 </header>
-</body>
-</html>';
+';
     }
 }
 

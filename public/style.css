@@ -1,0 +1,39 @@
+h1{
+    color: red;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: gray;
+
+}
+
+header>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header ul{
+    display: flex;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header li{
+    list-style: none;
+    margin-left: 1rem;
+    font-size: 1.3em;
+}
+
+header form{
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+}

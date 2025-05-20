@@ -1,0 +1,40 @@
+<?php
+
+namespace Hb\EcommercePhp\Basic;
+
+class Navbar
+{
+
+    public function __construct($productlink, $cartlink)
+    {
+        echo '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>';
+
+
+        echo '<header>
+    <div>
+        <h1>E-Shop</h1>
+        <ul>
+            <li><a href="' . $productlink . '">Products</a></li>
+            <li><a href="' . $cartlink . '">Cart</a></li>
+                    </ul>
+    </div>
+    <form action="post">
+        <input type="text" name="" >
+        <button>Search</button>
+    </form>
+</header>
+</body>
+</html>';
+    }
+}
+
+?>
+
+<link rel="stylesheet" href="/style.css">

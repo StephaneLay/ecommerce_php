@@ -32,5 +32,9 @@ class Product
 </div>';
     }
 
+    public function getName(){
+        return $this->name;
+    }
+
 }
 ?>

@@ -28,9 +28,9 @@ class Navbar
             </li>
                     </ul>
     </div>
-    <form action="post">
-        <input type="text" name="" >
-        <button>Search</button>
+    <form method="post">
+        <input type="text" name="search" >
+        <button >Search</button>
     </form>
 </header>
 ';

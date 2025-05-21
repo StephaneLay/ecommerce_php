@@ -9,3 +9,4 @@ session_start();
 
 $cart = new Cart();
 $header = new Navbar("/", "cart.php",$cart->getProductNumber());
+$cart->render();
